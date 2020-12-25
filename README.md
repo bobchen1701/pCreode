@@ -13,7 +13,7 @@ Example: [Data file](https://github.com/KenLauLab/pCreode/blob/master/data/Myelo
 
 ### Algorithm Overview
 
-The p-Creode algorithm is composed of six distinct steps, as outlined beginning on page 16 of [Unsupervised trajectory analysis of single-cell RNA-seq and imaging data reveals alternate tuft cell origins in the gut](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5799016/).
+The p-Creode algorithm is composed of six distinct steps, as outlined in Figure 1 and the Method Details section of [Unsupervised trajectory analysis of single-cell RNA-seq and imaging data reveals alternate tuft cell origins in the gut](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5799016/).
 These six steps are as follows:
 1. Down-sampling (density-dependent down-sampling for rare and overrepresented cell state normalization)
 2. Graph construction (density based [_k_-nearest neighbor](https://en.wikipedia.org/wiki/Nearest_neighbor_graph))
