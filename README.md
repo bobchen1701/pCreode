@@ -23,7 +23,7 @@ These six steps are as follows:
 5. Consensus alignment (reassigns locations of path nodes in the topology to more accurately reflect paths observed in the data)
 6. Scoring (compares the constructed topologies based on dissimilarity to produce a p-Creode score)
 
-Current p-Creode methodology entails running steps one through five 100 times and then running step 6 one time. Each of the six steps can be found within the [_functions.py_](https://github.com/KenLauLab/pCreode/blob/master/pcreode/functions.py) file.
+Current p-Creode methodology entails running steps one through five 100 times and then running step 6 one time. Each of the six steps can be found within the [algorithm.py](https://github.com/KenLauLab/pCreode/blob/master/pcreode/algorithm.py) file.
 
 ### Installation for Linux (recommended)
 
@@ -40,7 +40,7 @@ pip install .
 pip install scanpy
 ```
 
-3. Verify everything works as expected by running the 'pCreode_tutorial.ipynb' file. The file should run without errors.
+3. Verify everything works as expected by running the [pCreode_tutorial.ipynb](https://github.com/KenLauLab/pCreode/blob/master/notebooks/pCreode_tutorial.ipynb) file. The file should run without errors.
 
 ### Installation for Mac
 
