@@ -25,9 +25,20 @@ These six steps are as follows:
 
 Current p-Creode methodology entails running steps one through five 100 times and then running step 6 one time. Each of the six steps can be found within the [_functions.py_](https://github.com/KenLauLab/pCreode/blob/master/pcreode/functions.py) file.
 
-### Installation for Mac or Linux
+### Installation for Linux
 
-There are three ways to install p-Creode with Mac/Linux operating systems.
+```cmd
+git clone git://github.com/KenLauLab/pCreode
+cd pCreode
+conda create -n pcreode python=3.7 numpy pandas matplotlib python-igraph jupyter cython -c conda-forge
+conda activate pcreode
+pip install .
+pip install scanpy
+```
+
+### Installation for Mac
+
+There are three ways to install p-Creode with Mac operating systems.
 
 1. Install from github
 ```python
@@ -62,34 +73,7 @@ In addition, some Mac users have experienced issues installing igraph, [here](ht
 
 ### Installation for Windows
 
-The problem with p-Creode installation on a Windows machine is with the python-igraph package, where there seems to be a bug in the setup.  Hence, additional steps must be taken.
-
-1. Install Anaconda
-
-2. Download the user compile wheels of 2 packages (download the version as appropriate to your Python install) from this [link](http://www.lfd.uci.edu/~gohlke/pythonlibs/), or follow these direct links to the necessary packages: [pyCairo](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo) and [python-igraph](http://www.lfd.uci.edu/~gohlke/pythonlibs/#python-igraph)
-
-3. In Anaconda prompt, go to the directory where the whls are downloaded and install them:  
-            
-```python   
-pip install pycairo‑1.18.1‑cp37‑cp37m‑win_amd64.whl
-pip install python_igraph‑0.7.1.post6‑cp37‑cp37m‑win_amd64.whl
-```
-
-4. Install pcreode from github      
-
-```
-git clone git://github.com/KenLauLab/pCreode
-cd pCreode
-pip install .
-```
-
-If you are having issues with igraph plotting of graphs please try:
-
-```
-conda install -c conda-forge python-igraph
-```
-
-You will still need to manually download the [jupyter notebook](https://github.com/KenLauLab/pCreode/blob/master/notebooks/pCreode_tutorial.ipynb) and example [data file](https://github.com/KenLauLab/pCreode/blob/master/data/Myeloid_Raw_Normalized_Transformed.h5ad) from the folders above to be able to run the tutorial.
+p-Creode is not supported on Windows.
 
 ## Tutorial
 
