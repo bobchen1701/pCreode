@@ -27,6 +27,10 @@ Current p-Creode methodology entails running steps one through five 100 times an
 
 ### Installation for Linux
 
+1. Install [Anaconda](https://www.anaconda.com/products/individual)
+
+2. Run the following in `Terminal`:
+
 ```cmd
 git clone git://github.com/KenLauLab/pCreode
 cd pCreode
