@@ -28,6 +28,7 @@ from igraph import *
 from .functions import *
 import matplotlib
 from IPython.display import display, Image
+import random
 
 
 #################################################

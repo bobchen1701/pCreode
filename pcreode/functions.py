@@ -509,10 +509,10 @@ def pCreode_Scoring(data, file_path, num_graphs):
     :return branch_diss: value of pairwise difference in branch counts
     :return dist_diss:   value of pairwise difference in graph distance
     '''
-    if data is not np.ndarray:
-        raise TypeError('data variable must be numpy ndarray')
-    if not os.path.exists(file_path):
-        raise TypeError('please supply a valid file path directory')
+    # if data is not np.ndarray:
+    #     raise TypeError('data variable must be numpy ndarray')
+    # if not os.path.exists(file_path):
+    #     raise TypeError('please supply a valid file path directory')
 
 
     # array to hold all graph differences between graphs
@@ -627,12 +627,12 @@ def pCreode(
                      addition of graphs to previously ran lot
     :return: will save creode files in given directory
     '''
-    if data is not np.ndarray:
-        raise TypeError('`data` must be numpy ndarray')
-    if density is not np.ndarray:
-        raise TypeError('`density` must be numpy array')
-    if not os.path.exists(file_path):
-        raise TypeError('please supply a valid directory')
+    # if data is not np.array:
+    #     raise TypeError('`data` must be numpy array')
+    # if density is not np.array:
+    #     raise TypeError('`density` must be numpy array')
+    # if not os.path.exists(file_path):
+    #     raise TypeError('please supply a valid directory')
 
     print("Performing %i independent runs, may take some time" % num_runs)
 
@@ -816,8 +816,6 @@ def pCreode(
 
         start_id = start_id + 1
 
-    # return to normal treatment of print statements
-    sys.stdout = old_stdout
 
     return (creode_graph, down_ind[al_hi_pl_ind[creode_ind]])
 
@@ -1059,10 +1057,6 @@ def return_weighted_adj(data, file_path, graph_id):
     :param file_path: path to directory where output files are stored
     :return w_adj:    a numpy ndarray representing weighted adjacency matrix
     '''
-    if data is not np.ndarray:
-        raise TypeError('`data` must be numpy ndarray')
-    if not os.path.exists(file_path):
-        raise TypeError('please supply a valid file path directory')
 
     # read in arrays for indices for two graphs, in terms of original dataset
     ind_1 = np.genfromtxt(

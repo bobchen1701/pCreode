@@ -25,7 +25,7 @@ These six steps are as follows:
 
 Current p-Creode methodology entails running steps one through five 100 times and then running step 6 one time. Each of the six steps can be found within the [_functions.py_](https://github.com/KenLauLab/pCreode/blob/master/pcreode/functions.py) file.
 
-### Installation for Linux
+### Installation for Linux (recommended)
 
 1. Install [Anaconda](https://www.anaconda.com/products/individual)
 
@@ -39,6 +39,8 @@ conda activate pcreode
 pip install .
 pip install scanpy
 ```
+
+3. Verify everything works as expected by running the 'pCreode_tutorial.ipynb' file. The file should run without errors.
 
 ### Installation for Mac
 
